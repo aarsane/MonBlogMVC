@@ -11,5 +11,6 @@ function getBillets() {
 // Effectue la connexion à la BDD
 // Instancie et renvoie l'objet PDO associé
 function getBDD() {
-    // TODO
+    $bdd = new PDO('mysql:host=localhost;dbname=monblog;charset=utf8', 'root', '');
+    return($bdd);
 }
